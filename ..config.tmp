@@ -1,5 +1,6 @@
 deps_config := \
 	/home/tomcat/buildroot-2022.02.9/output/.br2-external.in.menus \
+	package/gcc/Config.in \
 	Config.in.legacy \
 	package/zstd/Config.in.host \
 	package/zip/Config.in.host \
@@ -3012,7 +3013,7 @@ endif
 ifneq "$(HOSTARCH)" "x86_64"
 /home/tomcat/buildroot-2022.02.9/output/build/buildroot-config/auto.conf: FORCE
 endif
-ifneq "$(BR2_VERSION_FULL)" "-ge78ea379"
+ifneq "$(BR2_VERSION_FULL)" "-g29a8cd5c-dirty"
 /home/tomcat/buildroot-2022.02.9/output/build/buildroot-config/auto.conf: FORCE
 endif
 
